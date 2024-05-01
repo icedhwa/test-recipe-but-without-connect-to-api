@@ -1,0 +1,29 @@
+<div>
+  <img [src]="landingImg" alt="landingImg"
+    class="w-screen h-screen bg-cover bg-center absolute blur brightness-50 mx-[-10px] mt-[-10px] z-0"
+  >
+  <div class="w-screen h-screen
+    flex flex-col items-center justify-center
+  ">
+    <div class="flex flex-col justify-evenly items-center h-3/5 bg-gray-800 bg-opacity-40 shadow-3xl z-10">
+      <div class="flex flex-col justify-between items-center gap-10">
+        <h1 class="flex items-center text-6xl">Diabetes-friendly recipe browser</h1>
+        
+        <h2 class="flex items-center text-4xl">Find tasty, healthy, low-carb recipes</h2>
+      </div>
+
+      <div class="relative text-gray-600 focus-within:text-gray-400">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </button>
+        </span>
+        <input type="search" name="q" class="w-96 input input-primary py-2 text-sm text-white bg-base-100 rounded-2xl pl-10" placeholder="'Chicken pizza'" autocomplete="off">
+        
+      </div>
+    </div>
+  </div>
+  <app-footer
+    [credits]="landingCredits"
+  ></app-footer>
+</div>
